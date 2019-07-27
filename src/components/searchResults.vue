@@ -1,5 +1,7 @@
+// component to handle search results
+
 <template>
-<p>     Results</p>
+<p>     Results here </p>
 </template>
 
 
