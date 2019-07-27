@@ -1,3 +1,4 @@
+// component common home area to include search area and result componenets
 <template>
 <div class="container">
     <form>

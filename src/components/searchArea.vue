@@ -1,3 +1,5 @@
+// component - search input area handling
+
 <template>
         <div class="form-group">
             <label >Search Music</label>
