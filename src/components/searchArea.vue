@@ -21,17 +21,19 @@ export default {
         },
    methods : {
 
-
+            
             search(event){
                 var searchInput = event.target.value;
+                // sending request to deezer api with axios 
                 axios.get("https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q="+searchInput)
                     .then(response => {
-                        //  console.log(response.data);
-                    this.searchResults=response.data;
+                    this.searchResults=response.data.data;
+                //   console.log(response.data.data[0].preview);
                     })
                     .catch(e => {
                         this.errors.push(e)
                     })
+                    // sending back the data to the parent component
         this.$emit('newDataSet',this.searchResults)
           
        }

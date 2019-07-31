@@ -9,9 +9,8 @@
        
     </form>
 
-<div class="col-lg-12">
+
     <app-results :resultpass="results"></app-results>
-</div>
 
 
 </div>
