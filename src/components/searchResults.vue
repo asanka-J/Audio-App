@@ -1,12 +1,15 @@
 // component to handle search results
 
 <template>
-<p>     Results here </p>
+<div> {{resultpass}} </div>
+
 </template>
 
 
 <script>
 export default {
+    props:['resultpass']
+    
     
 }
 </script>
