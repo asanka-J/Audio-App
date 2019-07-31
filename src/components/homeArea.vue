@@ -5,13 +5,12 @@
         <legend>Hi ! How are you duin?</legend>
   
 
- <app-search></app-search>
+ <app-search @newDataSet="results = $event"></app-search>
        
     </form>
 
-<div class="col-lg-12">
-    <app-results></app-results> 
-</div>
+
+    <app-results :resultpass="results"></app-results>
 
 
 </div>
@@ -23,6 +22,14 @@ import SearchArea from './searchArea.vue'
 import ResultArea from './searchResults'
 
 export default {
+
+ data(){
+        return {
+            results:[]
+            
+        }
+    },
+
 components:{
   'app-search':SearchArea,
   'app-results':ResultArea,
