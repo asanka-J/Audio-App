@@ -1,8 +1,8 @@
 <template>
   <div >
   <app-nav></app-nav>
-  
-  <app-homearea></app-homearea>
+ <router-view></router-view>
+  <!-- <app-homearea></app-homearea> -->
   
   
   </div>
@@ -12,9 +12,9 @@
 import HomeArea from './components/homeArea.vue'
 
 export default {
-components:{
-  'app-homearea':HomeArea,
-}
+// components:{
+//   'app-homearea':HomeArea,
+// }
  
 
 }

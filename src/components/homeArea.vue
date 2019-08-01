@@ -5,7 +5,7 @@
         <legend>Hi ! How are you duin?</legend>
   
 
- <app-search @newDataSet="results = $event"></app-search>
+ <app-search @newDataSet="results = $event"></app-search> <!-- get data from dataset and inject into results array -->
        
     </form>
 
